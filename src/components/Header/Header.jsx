@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Header.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "materialize-css/dist/css/materialize.min.css";
@@ -25,7 +25,7 @@ export default function Header({changeState}) {
               <a href="/about">About</a>
             </li>
             <li>
-              <a href="">
+              <a href="#">
                 <i class="material-icons" onClick={pageRefresh}>refresh</i>
               </a>
             </li>

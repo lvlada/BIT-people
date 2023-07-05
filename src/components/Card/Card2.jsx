@@ -22,7 +22,7 @@ export default function Card2() {
         console.log("res", json);
         console.log("user", user);
       });
-  }, []);
+  }, [setUser]);
   useEffect(() => {
     console.log("user", user);
     const maleNew = user.filter((user) => user.gender === "male");
@@ -79,7 +79,7 @@ export default function Card2() {
                 })}
               </>
             )}
-            {user.length > 0 && firstLast.length == 0 && (
+            {user.length > 0 && firstLast.length === 0 && (
               <>
                 {user.map((item, index) => {
                   return (

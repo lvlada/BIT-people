@@ -39,7 +39,7 @@ export default function IdCard({ content, gen }) {
                 <div className="col s12 m4" >
                 <div class="card hoverable">
                   <div class="card-image">
-                    <img src={content.picture.large} />
+                    <img src={content.picture.large} alt="" />
                     <span class="card-title">
                       {content.name.first}
                     </span>
